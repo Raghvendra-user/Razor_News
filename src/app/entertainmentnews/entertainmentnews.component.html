@@ -1,0 +1,16 @@
+<div class="container mt-5">
+    <div class="headi">
+        <h1>Top Entertainment News</h1>
+    </div>
+    <div class="row">
+        <div *ngFor="let d of entertainmentnewsDisplay" class="col-lg-3 mt-3 mb-3">
+            <div class="box">
+                <img src="{{ d.urlToImage }}" height="200px" width="100%" />
+                <h5 class="mt-2 mb-2">{{ d.title }}</h5>
+                <!-- <p>{{ d.description }}</p> -->
+                <a href="{{ d.url }}" target="_blank" class="read btn btn-dark btn-sm">Read More</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
